@@ -1,0 +1,1462 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: url('fonts/Gilroy-Light.otf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy Bold';
+    src: url('fonts/Gilroy-ExtraBold.otf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Urbanist';
+    src: url('fonts/Urbanist-Regular.otf');
+    font-weight: normal;
+}
+
+
+
+body {
+
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.cover {
+
+    width: 100%;
+    height: 51rem;
+    
+    background:
+
+        linear-gradient(180deg, rgba(25, 63, 114, 1)0%,
+            rgba(42, 164, 200, 1) 99.99%,
+            rgba(42, 164, 200, 0) 100%);
+    
+
+}
+
+
+.cover-layer{
+
+    width:inherit;
+    height:inherit;
+    
+    background-image: url('../images/backgrounds/layer.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    mix-blend-mode: multiply;
+    position: absolute;
+}
+
+.section1 {
+
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+
+    position: relative;
+    top: 50px;
+}
+
+.logo {
+
+    width: 15.75rem;
+    height: 3.8125rem;
+    position: relative;
+    left: 6.75rem;
+
+}
+
+ul {
+    display: flex;
+    position: relative;
+    right: 6.75rem;
+    gap: 2.625rem;
+}
+
+
+
+li,
+a {
+
+
+    font-family: Gilroy;
+    font-size: .9375rem;
+    color: white;
+    font-weight: 600;
+    list-style-type: none;
+    text-decoration: none;
+    line-height: .97rem;
+    letter-spacing: -0.5%;
+    cursor: pointer;
+    padding-bottom: .75rem;
+}
+
+ul a:active {
+
+    border-bottom: .125rem solid rgba(51, 122, 145, 1);
+}
+
+
+.section2 {
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+
+    top: 3.4375rem;
+
+}
+
+.text {
+
+    position: relative;
+    bottom: 3.125rem;
+    left:50px;
+   
+}
+
+
+.big-text {
+
+    font-family: Gilroy;
+    font-size: 4.0625rem;
+    font-weight: 800;
+    line-height: 4.8137rem;
+    letter-spacing: -0.5%;
+    color: white;
+
+    width: 32.375rem;
+    height: 14.4375rem;
+}
+
+.small-text {
+
+    font-family: Gilroy;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.6375rem;
+    letter-spacing: 1%;
+    color: white;
+    width: 30.375rem;
+    height: 3.25rem;
+    position: relative;
+    top: 1.1875rem;
+
+}
+
+.buttons {
+
+    position: relative;
+    top: 2.6875rem;
+    display: flex;
+    align-items: center;
+    gap: 2.6875rem;
+}
+
+.appointment {
+    font-family: Urbanist;
+    padding: .625rem 1.3125rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.4737rem;
+    letter-spacing: -0.5%;
+    color: #337A91;
+    background-color: rgba(191, 229, 228, 1);
+    border-radius: .3125rem;
+}
+
+
+.contact {
+    padding-bottom: .3125rem;
+    border-bottom: .0625rem solid rgba(255, 255, 255, 1);
+
+}
+
+
+.cover-image {
+
+    
+    width: 48.5625rem;
+    height: 47.6875rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top:42px;
+   
+   
+}
+
+.tooth{
+
+    width:651px;
+    height:588px;
+    position: absolute;
+    top:20px;
+}
+
+.girl{
+
+width:549px;
+height:655px;
+position: absolute;
+left:86px;
+top:3px;
+}
+
+.general-info {
+
+    display: block;
+
+}
+
+.text1 {
+
+    font-family: Gilroy;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.625rem;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: rgba(51, 122, 145, 1);
+    margin-top: 3.0625rem;
+
+
+}
+
+.text2 {
+
+    width: 40.9375rem;
+    font-family: Gilroy;
+    font-size: 2.1875rem;
+    font-weight: 700;
+    line-height: 2.625rem;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(24, 36, 33, 1);
+    position: relative;
+    margin: 0 auto;
+    margin-top: 1.125rem;
+}
+
+.line {
+
+    width: 5.75rem;
+    height: .1875rem;
+    background: rgba(51, 122, 145, 1);
+    position: relative;
+    ;
+    margin-top: 1.8125rem;
+
+}
+
+.text3 {
+
+    font-family: Gilroy;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.8125rem;
+    letter-spacing: -0.005em;
+    text-align: center;
+    color: rgba(24, 36, 33, 0.7);
+    width: 45.375rem;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+.services{
+
+   
+    width:100%;
+    max-width: 1585px;;
+    position: relative;
+    margin:0 auto;
+}
+
+.service-link{
+
+    color: rgba(24, 36, 33, 0.7);
+    text-decoration: underline;
+    text-underline-position: under;
+
+}
+
+.list-of-services {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5625rem;
+    justify-content: center;
+    margin-top: 3.5625rem;
+}
+
+.service {
+
+    width: 25.9375rem;
+    height: 27.6875rem;
+
+}
+
+
+.tooth-icon {
+
+
+    margin-top: 3.25rem;
+    margin-left: 1.75rem;
+    ;
+
+}
+
+.service-title {
+
+    font-family: Gilroy;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.8125rem;
+    letter-spacing: 0rem;
+    text-align: left;
+    margin-left: 1.75rem;
+}
+
+.line2 {
+
+
+    width: 3.5625rem;
+    height: .1875rem;
+    background: rgba(51, 122, 145, 1);
+    margin-top: .8125rem;
+    margin-left: 1.75rem;
+
+}
+
+.service-description {
+
+    font-family: Gilroy;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.875rem;
+    letter-spacing: 0rem;
+    text-align: left;
+    margin-left: 1.75rem;
+    width: 21.5625rem;
+    height:119px;
+}
+
+.motivation {
+
+    font-family: Gilroy;
+    font-size: 1rem;
+    font-weight: bolder;
+    line-height: 1.5rem;
+    letter-spacing: 0rem;
+    text-align: left;
+    width: 22.5rem;
+    margin-left: 1.75rem;
+}
+
+.appointment-button {
+
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.book-appointment {
+
+
+    background: rgba(51, 122, 145, 1);
+    text-align: center;
+    border-radius: .3125rem;
+    padding: .625rem 1.3125rem;
+    font-family: Urbanist;
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    letter-spacing: -0.005em;
+    text-align: left;
+
+
+}
+
+.section3 {
+
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    position: relative;
+    top: 100px;
+}
+
+.team {
+
+    width: 100%;
+    height: 40.125rem;
+
+    display: flex;
+    justify-content: space-evenly;
+
+    position: relative;
+
+}
+
+.team-image {
+
+    position: relative;
+    width: 33.9375rem;
+    height: 52.875rem;
+    
+
+}
+
+.team-tooth {
+    position: absolute;
+    width: 27.9375rem;
+    height: 25.1875rem;
+    top: 9.0625rem;
+    left: 6.375rem;
+
+}
+
+.eclipse {
+
+    position: absolute;
+    width: 28rem;
+    height: 28rem;
+    top: 12.5625rem;
+    left: 3.25rem;
+    border-radius: 50%;
+    background: rgba(51, 122, 145, 1);
+
+}
+
+.dudes {
+
+    position: absolute;
+    width: 488px;
+    height: 43.125rem;
+    left: .5rem;
+    top: 4.75rem;
+    
+
+}
+
+.small-light {
+
+    position: absolute;
+    width: 3.625rem;
+    height: 3.625rem;
+    top: 19.5625rem;
+    left: 27.8125rem;
+     background: rgba(191, 229, 228, 1);
+    border-radius: 50%;
+}
+
+.small-dark {
+
+    position: absolute;
+    width: 3.625rem;
+    height: 3.625rem;
+    top: 36.6875rem;
+    left: 2.625rem;
+    background: rgba(51, 122, 145, 1);
+    border-radius: 50%;
+}
+
+
+.team-text {
+
+    position: relative;
+
+    top: 12.5rem;
+
+}
+
+.name {
+
+    font-family: Gilroy;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.625rem;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: rgba(51, 122, 145, 1);
+
+}
+
+.heading {
+
+    font-family: Gilroy;
+    font-size: 2.1875rem;
+    font-weight: 700;
+    line-height: 2.625rem;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 32.625rem;
+}
+
+.about-team {
+
+    font-family: Gilroy;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.875rem;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 32.8125rem;
+
+}
+
+.line3 {
+
+    width: 5.75rem;
+    height: .1875rem;
+    background: rgba(51, 122, 145, 1);
+    position: relative;
+    ;
+    margin-top: 1.1875rem;
+    margin-left: 0px;
+}
+
+
+.curved-line {
+
+    height: 2043px;
+    width: 891px;
+    position: absolute;
+     right:170px;
+     top:480px;
+   
+    
+}
+
+.family-section {
+
+
+    width: 100%;
+
+    height: fit-content;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20%;
+}
+
+
+
+.family-image {
+
+    width: 34.3125rem;
+    height: 43.8125rem;
+    position: relative;
+
+    top: -100px;
+
+}
+
+
+.family-tooth {
+    position: absolute;
+    width: 35.1875rem;
+    height: 45.9375rem;
+    left: 4.4375rem;
+
+
+}
+
+.family-pic {
+
+    width: 34rem;
+    height: 34rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 4.875rem;
+}
+
+.family-dark-circle {
+
+    width: 3.9375rem;
+    height: 3.9375rem;
+    position: absolute;
+    top: 7.75rem;
+    left: 2.875rem;
+    background: rgba(51, 122, 145, 1);
+    border-radius: 50%;;
+}
+
+.family-light-circle {
+
+    width: 3.9375rem;
+    height: 3.9375rem;
+    position: absolute;
+    top: 33.5625rem;
+    left: 24.625rem;
+    border-radius: 50%;
+    background: rgba(191, 229, 228, 1);
+
+}
+
+
+
+
+.cosmetic-section {
+
+    width: 100%;
+    height: 43.8125rem;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.cosmetic-image {
+
+    width: 586px;
+    height: 700px;
+}
+
+.cosmetic-pic {
+
+    width: 34rem;
+    height: 34rem;
+    border-radius: 50%;
+    position: absolute;
+
+
+}
+
+
+.cosmetic-big-circle {
+
+    width: 16.3125rem;
+    height: 16.3125rem;
+    position: absolute;
+    margin-left: 319px;
+    background: rgba(51, 122, 145, 1);
+    border-radius: 50%;
+
+}
+
+.cosmetic-small-circle {
+
+    position: absolute;
+    top: 23.75rem;
+
+    width: 5.75rem;
+    height: 5.75rem;
+    border-radius: 50%;
+    background: rgba(191, 229, 228, 1);
+
+
+}
+
+.cosmetic-text {
+
+    position: relative;
+    border: 1px solid white;
+    top: 6.25rem;
+}
+
+.sedation-section {
+
+    width: 100%;
+    height: 48rem;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    /*  top: 100px;*/
+}
+
+.sedation-text {
+
+    position: relative;
+    /*left: 6.8125rem;*/
+    top: 7.5rem;
+
+}
+
+.sedation-image {
+    width: 601px;
+    height: 768px;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.sedation-tooth {
+
+    width: 35.4375rem;
+    height: 45.9375rem;
+    position: absolute;
+
+}
+
+
+
+.sedation-pic {
+
+    width: 34rem;
+    height: 34rem;
+    border-radius: 50%;
+    position: absolute;
+
+    right: 70px;
+    top: 102px;
+
+
+}
+
+
+.sedation-light-circle {
+
+
+    width: 3.9375rem;
+    height: 3.9375rem;
+    position: absolute;
+    left: 25px;
+    top: 150px;
+    background: rgba(191, 229, 228, 1);
+    border-radius: 50%;
+
+}
+
+.sedation-dark-circle {
+
+    width: 3.9375rem;
+    height: 3.9375rem;
+    position: absolute;
+    left: 390px;
+    top: 560px;
+    background: rgba(51, 122, 145, 1);
+
+    border-radius: 50%;
+
+
+}
+
+.invisalign-section {
+
+    width: 100%;
+    height: 550px;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: 100px;
+
+}
+
+
+.invisalign-image {
+
+    height: 100%;
+    width: 36.375rem;
+    position: relative;
+
+    top: -100px;
+
+}
+
+.invisalign-big-circle {
+
+
+    width: 16.3125rem;
+    height: 16.3125rem;
+    border-radius: 50%;
+    background: rgba(191, 229, 228, 1);
+    position: absolute;
+    left: 18.875rem;
+    top: 2.8125rem;
+
+}
+
+.invisalign-pic {
+
+    width: 34rem;
+    height: 34rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 4.125rem;
+    left: 1.1875rem;
+
+
+}
+
+.invisalign-small-circle {
+
+    width: 5.75rem;
+    height: 5.75rem;
+    border-radius: 50%;
+    background: rgba(51, 122, 145, 1);
+    position: absolute;
+    top: 27.875rem;
+    left: 1.1875rem;
+
+}
+
+.location {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    margin-top: 330px;
+    ;
+}
+
+.location-text-1 {
+
+    font-family: Gilroy;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: rgba(51, 122, 145, 1);
+
+
+}
+
+.location-text-2 {
+
+    font-family: Gilroy;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: 0em;
+    text-align: center;
+
+
+}
+
+.location-text-3 {
+
+    font-family: Gilroy;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: -0.005em;
+    text-align: center;
+    width: 726px;
+}
+
+.map {
+
+    width: 1298px;
+    height: 688px;
+    border: 1px solid black;
+    border-radius: 15px;
+    ;
+
+}
+
+.contact-info {
+
+    width: 1298px;
+    height: 161px;
+    margin-top: 29px;
+    ;
+    display: flex;
+
+    gap: 26px;
+}
+
+.phone,
+.adress,
+.email {
+
+    width: 415px;
+    height: 161px;
+
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+}
+
+.info1 {
+
+    font-family: Gilroy;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0px;
+    text-align: center;
+
+
+}
+
+.info2 {
+
+    font-family: Gilroy;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0px;
+    text-align: center;
+    width: 248px;
+    color: rgba(24, 36, 33, 0.7);
+
+
+}
+
+
+.line4 {
+
+
+    width: 57px;
+    height: 3px;
+    background: rgba(51, 122, 145, 1);
+
+}
+
+.testimonials {
+
+
+    width: 1298px;
+    height: fit-content;
+
+    position: relative;
+    top: 79px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.testimonials-text {
+
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.testimonials-text1 {
+
+    font-family: Gilroy;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: rgba(51, 122, 145, 1);
+    padding-bottom: 15px;
+}
+
+.testimonials-text2 {
+
+    font-family: Gilroy;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 45px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: black;
+    padding-bottom: 5px;
+}
+
+.testimonials-rating-review {
+
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    width: fit-content;
+}
+
+.reviews {
+
+    font-family: Gilroy;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: black;
+    border: 1px solid black;
+     padding:0;
+     width:203px;
+     
+
+
+    border-radius: 5px;
+
+
+}
+
+.stars {
+
+    display: flex;
+    gap: 13px;
+
+}
+
+.star {
+
+    width: 30px;
+    height: 30px;
+
+}
+
+.rating {
+
+    font-family: Gilroy;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: left;
+
+
+}
+
+.google-testimonials {
+
+    display: flex;
+    justify-content: space-between;
+    width: 1298px;
+    height: fit-content;
+    position: relative;
+
+    margin: 0 auto;
+    margin-top: 79px;
+
+
+}
+
+.google-testimonial {
+
+    width: 415px;
+    height: 337px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+}
+
+.testimonial-logo {
+
+    width: 53px;
+    height: 53px;
+    position: relative;
+    top: 38px;
+    left: 37px;
+
+}
+
+.testimonial-text {
+
+    width: 336px;
+    height: 78px;
+    font-family: Gilroy;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: -0.005em;
+    text-align: left;
+    color: rgba(24, 36, 33, 0.7);
+    position: relative;
+    top: 32px;
+    left: 47px;
+}
+
+
+.user-info {
+    display: flex;
+    gap: 11px;
+}
+
+.james {
+    width: 51px;
+    height: 51px;
+    border-radius: 50%;
+    position: relative;
+    top: 44px;
+    left: 48px;
+}
+
+.text-info {
+
+
+    font-family: Gilroy;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -0.005em;
+    text-align: left;
+
+    font-family: Gilroy;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: -0.005em;
+    text-align: left;
+
+    position: relative;
+    top: 44px;
+    left: 51px;
+
+}
+
+.banner {
+
+    width: 100%;
+    height: 406px;
+    margin-top: 150px;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+}
+
+.banner-tape {
+
+    width: 100%;
+    height: 246px;
+    background: rgba(51, 122, 145, 1);
+
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.banner-layer {
+
+    width: inherit;
+    height: inherit;
+    background-image: url("../images/backgrounds/tape-layer.png");
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    mix-blend-mode: multiply;
+    position: absolute;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.tape-text {
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: relative;
+    z-index: 10;
+}
+
+.tape-text1 {
+
+    font-family: Gilroy;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 45px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: white;
+}
+
+.tape-button {
+
+    width: 189px;
+    height: 44px;
+
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tape-anchor {
+
+    font-family: Urbanist;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.005em;
+    text-align: center;
+    vertical-align: middle;
+    padding:0;
+}
+
+.tape-image {
+
+
+    width: 421px;
+    height: 655px;
+
+    position: relative;
+
+}
+
+.tape-dudes {
+
+
+    width: 421px;
+    height: 470px;
+    position: absolute;
+    top: -20px;
+    filter: saturate();
+}
+
+
+
+.circle-containter {
+
+    width: fit-content;
+    height: 350px;
+    overflow-y: hidden;
+    position: absolute;
+
+    left: 91px;
+    top: 100px;
+}
+
+.tape-circle {
+
+    width: 373px;
+    height: 373px;
+    background: rgba(51, 122, 145, 1);
+    border-radius: 50%;
+
+
+}
+
+.footer-wrapper {
+
+    width: 100%;
+    height: 510px;
+    background-color: rgba(232, 222, 187, 0.6);
+   
+    position: relative;
+    bottom: 0px;
+
+}
+
+footer {
+
+    width: 94%;
+    height: 510px;
+    
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+     
+}
+
+
+.footer-left-section {
+
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height:fit-content;
+    left: 116px;
+    top: 114px;
+    
+}
+
+.footer-ethos-logo {
+
+    width: 219px;
+    height: 52px;
+
+}
+
+.left-section-text {
+
+    width: 512px;
+    height: 104px;
+    font-family: Gilroy;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: -0.005em;
+    text-align: left;
+    position: relative;
+    top: 32px;
+
+}
+
+.copyright {
+    font-family: Gilroy;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: -0.005em;
+    text-align: left;
+
+    position: relative;
+    top: 120px;
+
+}
+
+.footer-right-section {
+
+    display: flex;
+   gap:40px;
+    position: relative;
+    
+    right:108px;
+    top: 106px;
+    height: fit-content;
+}
+
+.heading1 {
+
+    font-family: Gilroy;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -0.005em;
+    text-align: left;
+
+
+
+}
+
+.availability {
+
+    height: fit-content;
+    width: 144px;
+
+}
+
+.footer-contact {
+    height: fit-content;
+    width: 175px;
+   
+}
+
+.links {
+    height: fit-content;
+     
+    width: 100px;
+}
+
+.schedule {
+
+    width: 90%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+    position: relative;
+    top: 19px;
+}
+
+.day {
+
+    font-family: Gilroy;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: -0.005em;
+    text-align: left;
+
+    width: 37px;
+
+}
+
+.time {
+
+    font-family: Gilroy;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: -0.005em;
+    text-align: left;
+
+    width: 56px;
+
+}
+
+
+.footer-contact-info {
+
+    width: 175px;
+    height: 156px;
+   
+    position: relative;
+    top: 23px;
+
+}
+
+.footer-adress {
+
+
+    font-family: Gilroy;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: -0.005em;
+    text-align: left;
+
+}
+
+.footer-phone {
+
+    font-family: Gilroy;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: -0.005em;
+    text-align: left;
+
+
+
+}
+
+.footer-links-containter{
+
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    position: relative;
+    top:30px;
+    font-family: Gilroy;
+font-size: 17px;
+font-weight: 400;
+line-height: 28px;
+letter-spacing: -0.005em;
+text-align: left;
+
+}
+
+.link{
+    width:120px;
+    color:black;
+}
+
+.service-link2{
+    font-size: inherit;
+    color:inherit;
+    text-decoration: underline;
+    text-underline-position: under;
+
+}
